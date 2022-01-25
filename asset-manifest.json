@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/p2p-dApp/static/css/main.5bbdf3fa.chunk.css",
+    "main.js": "/p2p-dApp/static/js/main.a164c578.chunk.js",
+    "main.js.map": "/p2p-dApp/static/js/main.a164c578.chunk.js.map",
+    "runtime-main.js": "/p2p-dApp/static/js/runtime-main.1e7bd60c.js",
+    "runtime-main.js.map": "/p2p-dApp/static/js/runtime-main.1e7bd60c.js.map",
+    "static/js/2.8daa6260.chunk.js": "/p2p-dApp/static/js/2.8daa6260.chunk.js",
+    "static/js/2.8daa6260.chunk.js.map": "/p2p-dApp/static/js/2.8daa6260.chunk.js.map",
+    "index.html": "/p2p-dApp/index.html",
+    "precache-manifest.70038664d48561c1c0c468c01650fd93.js": "/p2p-dApp/precache-manifest.70038664d48561c1c0c468c01650fd93.js",
+    "service-worker.js": "/p2p-dApp/service-worker.js",
+    "static/css/main.5bbdf3fa.chunk.css.map": "/p2p-dApp/static/css/main.5bbdf3fa.chunk.css.map",
+    "static/media/404.svg": "/p2p-dApp/static/media/404.451de7b8.svg",
+    "static/media/arbre2.png": "/p2p-dApp/static/media/arbre2.7e7a0b4a.png",
+    "static/media/App.css": "/p2p-dApp/static/media/board.7d14b0f1.png",
+    "static/media/dark-logo.png": "/p2p-dApp/static/media/dark-logo.002f32d0.png",
+    "static/media/forest-background-night.jpeg": "/p2p-dApp/static/media/forest-background-night.1f69a4e6.jpeg",
+    "static/media/forest-background.jpeg": "/p2p-dApp/static/media/forest-background.c162da0e.jpeg",
+    "static/media/light-logo.png": "/p2p-dApp/static/media/light-logo.002f32d0.png",
+    "static/media/tree.png": "/p2p-dApp/static/media/tree.7dfe3353.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e7bd60c.js",
+    "static/js/2.8daa6260.chunk.js",
+    "static/css/main.5bbdf3fa.chunk.css",
+    "static/js/main.a164c578.chunk.js"
+  ]
+}
