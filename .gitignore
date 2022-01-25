@@ -5,3 +5,7 @@ coverage
 coverage.json
 .DS_Store
 
+
+# Local Netlify folder
+.netlify
+build/
