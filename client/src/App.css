@@ -1,9 +1,17 @@
+/* App */
 .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
@@ -16,7 +24,124 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+#root nav{
+  background: #FFF;
+  height: 30px;
+}
 .App-link {
-  color: #09d3ac;
+  color: #61dafb;
+}
+.appP2P{
+  display: flex;
+  flex-direction: row;
+}
+.appP2P > div{
+  width: 50%;
+  align-items: center;
+  background: #FFF;
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  opacity: 68%;
+  font-weight: bold;
+}
+.appP2P > div:first-child{
+  background-color: #000;
+  color: #FFF;
+}
+.appP2P > div:last-child{
+  background-color: #FFF;
+  color: #000;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Roadmap */
+.roadmap {
+    align-items: center;
+    background: #FFF;
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+    opacity: 68%;
+    font-weight: bold;
+    text-align: center;
+}
+.roadmap ul li{
+    list-style-type: none;
+}
+/* MarketPlace */
+.marketPlaceTree{
+    justify-content: center;
+}
+.card {
+    background-color: transparent !important;
+    padding: 5rem 8rem 0 8rem;
+    border: none !important;
+}
+.nftLeaf .card{
+    width: 580px;
+    height: 700px;
+    margin: auto;
+    background: url("./assets/img/board.png") no-repeat;
+}
+.nftLeaf .card-title{
+    color: #FFF;
+}
+.nftLeaf .card-body{
+    text-align: center;
+    padding: 1rem;
+    padding-left: 2.5rem;
+}
+.ntfLeaf .card-img-top {
+    padding: 1rem;
+}
+.nftLeaf .card-text{
+    color: #FFF;
+}
+/* Mint page */
+.mintPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFF;
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+/* About */
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about > div{
+  width: 30%;
+  margin: 1em 0;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  opacity: 75%;
+  text-align: center;
+  font-size: 1.2em;
+}
+.whiteBox {
+    background: #FFF;
+    border: 3px solid black;
+    font-weight: bold;
+}
+.greenBox{
+    background: #07580d;
+    border: 3px solid black;
+    color: #FFF;
+    font-weight: bold;
+}
+.about h1{
+    font-size: 1.5rem;
 }

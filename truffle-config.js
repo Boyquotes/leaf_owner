@@ -17,6 +17,7 @@ module.exports = {
       from:'0x22DE065B7911e79f3bC4d6EC17A57496a531af98'
     }
   },
+  plugins: ["solidity-coverage"],
   mocha: {
     timeout: 100000
   },
@@ -32,17 +33,3 @@ module.exports = {
     }
   }
 };
-
-
-// const path = require("path");
-
-// module.exports = {
-//   // See <http://truffleframework.com/docs/advanced/configuration>
-//   // to customize your Truffle configuration!
-//   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
-//   networks: {
-//     develop: {
-//       port: 8545
-//     }
-//   }
-// };

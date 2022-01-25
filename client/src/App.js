@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import LeafContract from "./contracts/LeafDapp.json";
 import getWeb3 from "./getWeb3";
-import { FormCheck } from "react-bootstrap";
-
+import { Button, Col, Container, Card, FormCheck, Row } from "react-bootstrap";
+import Header from './components/Header'
 import "./App.css";
 
 function App() {
@@ -131,55 +131,67 @@ function App() {
 
   // {/* <img src={nftJson.image && `https://ipfs.io/ipfs/${nftJson.image.substring(7)}`} alt="img" /> */}
   return (
-    <div className="App">
-      {isOwner ? (
+    <Container>
+      <div className="appP2P">
         <div>
-          <div>
-            <h4>OWNER : {isOwner && account}</h4>
-          </div>
-
-          <div>
-            <hr width="60%" />
-            <h2>Balances & Supply</h2>
-            <h5>Eth disponible : {balanceEth}</h5>
-            <h5>LEAF supply : {supplyLeaf}</h5>
-            <h5>LNFT supply : {supplyNft}/10000</h5>
-          </div>
-
-          <div>
-            <hr width="60%" />
-            <h2>Changement du Dapp</h2>
-            <FormCheck
-              type="switch"
-              checked={pause}
-              onChange={pauseChanged}
-              label="Mettre le Dapp en pause"
-            />
-            <FormCheck
-              type="switch"
-              checked={test}
-              onChange={testChanged}
-              label="Passer en mode test"
-            />
-
-
-            <form onSubmit={costChanged} className="form">
-              <label>
-                <input
-                  type="text"
-                  ref={inputSetCost}
-                  className="input"
-                />
-              </label>
-              <input type="submit" value="Changer le Prix de LNFT" className="button" />
-            </form>
-
-          </div>
+          <h1>PLAY 2 PLANT</h1>
+          <h2>The Leaf project</h2>
+          <p>
+            Play 2 Plant est un jeu mobile créé pour contribuer à la reforestation en incitant ses joueurs à faire de l’activité physique. 
+            Notre jeu permet à l’utilisateur de gagner de la crypto-monnaie $LEAF et de planter des arbres lorsqu’il marche. Pour jouer, vous devez posséder un des 10.000 NFT.
+          </p>
         </div>
-      ) : (
-        <h5>Player : {account}</h5>
-      )}
-    </div>
+        <div>
+          {isOwner ? (
+          <div>
+            <div>
+              <h4>OWNER : {isOwner && account}</h4>
+            </div>
+
+            <div>
+              <hr width="60%" />
+              <h2>Balances & Supply</h2>
+              <h5>Eth disponible : {balanceEth}</h5>
+              <h5>LEAF supply : {supplyLeaf}</h5>
+              <h5>LNFT supply : {supplyNft}/10000</h5>
+            </div>
+
+            <div>
+              <hr width="60%" />
+              <h2>Changement du Dapp</h2>
+              <FormCheck
+                type="switch"
+                checked={pause}
+                onChange={pauseChanged}
+                label="Mettre le Dapp en pause"
+              />
+              <FormCheck
+                type="switch"
+                checked={test}
+                onChange={testChanged}
+                label="Passer en mode test"
+              />
+
+
+              <form onSubmit={costChanged} className="form">
+                <label>
+                  <input
+                    type="text"
+                    ref={inputSetCost}
+                    className="input"
+                  />
+                </label>
+                <input type="submit" value="Changer le Prix de LNFT" className="button" />
+              </form>
+
+            </div>
+          </div>
+        ) : (
+          <h5>Player : {account}</h5>
+        )}
+        </div>
+      </div>
+    </Container>
   );
 }
 
