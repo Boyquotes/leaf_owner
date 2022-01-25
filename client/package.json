@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://play2plant.github.io/p2p-dApp/",
   "engines": {
-      "node": "17.x",
-      "npm": "8.x"
+    "node": "17.x",
+    "npm": "8.x"
   },
   "dependencies": {
     "axios": "^0.25.0",
