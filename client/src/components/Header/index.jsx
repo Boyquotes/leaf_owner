@@ -7,6 +7,8 @@ import { StyledLink } from '../../utils/style/Atoms'
 import LightLogo from '../../assets/light-logo.png'
 import DarkLogo from '../../assets/dark-logo.png'
 import { useTheme } from '../../utils/hooks'
+import Pdf from '../../assets/doc/LitePaper.pdf';
+
 
 import colors from '../../utils/style/colors'
 
@@ -55,6 +57,9 @@ function Header() {
         </StyledLink>
         <StyledLink $theme={theme} to="/about">
           About
+        </StyledLink>
+        <StyledLink $theme={theme} to="/lite-paper">
+          Lite Paper
         </StyledLink>
       </div>
       <NightModeButton onClick={() => toggleTheme()}>
