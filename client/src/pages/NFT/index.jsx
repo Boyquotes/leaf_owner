@@ -45,7 +45,7 @@ function NFT() {
     <div>
       <PageTitle theme={theme}>Mon NFT</PageTitle>
       <PageSubtitle theme={theme}>
-        
+        ICI LNFT
       </PageSubtitle>
     </div>
   )

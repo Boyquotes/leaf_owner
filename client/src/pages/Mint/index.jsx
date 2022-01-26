@@ -168,9 +168,8 @@ function Mint() {
   };
 
   return (
-    <div>
+    <div className="mint">
       <PageTitle theme={theme}>Mint</PageTitle>
-      <PageSubtitle theme={theme}>
       {isOwner ? (
           <div>
             <div>
@@ -217,8 +216,7 @@ function Mint() {
           </div>
         ) : (
           <h5>Player : {account}</h5>
-        )}        
-      </PageSubtitle>
+        )}
     </div>
   )
 }

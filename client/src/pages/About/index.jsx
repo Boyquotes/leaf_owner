@@ -8,34 +8,11 @@ import { Loader } from '../../utils/style/Atoms'
 import { useFetch, useTheme } from '../../utils/hooks'
 import tree from '../../assets/img/tree.png'
 
-const PageTitle = styled.h1`
-  font-size: 30px;
-  text-align: center;
-  padding-bottom: 30px;
-  color: ${({ theme }) => (theme === 'light' ? '#000000' : '#ffffff')};
-`
-
-const PageSubtitle = styled.h2`
-  font-size: 20px;
-  color: ${colors.secondary};
-  font-weight: 300;
-  text-align: center;
-  padding-bottom: 30px;
-  color: ${({ theme }) => (theme === 'light' ? '#000000' : '#ffffff')};
-`
-
-const LoaderWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
 function About() {
   const { theme } = useTheme()
 
   return (
     <div>
-      <PageTitle theme={theme}>About</PageTitle>
-      <PageSubtitle theme={theme}>  
         <div className="about">
           <div className="whiteBox">
             <h1>MOVE-TO-EARN</h1>
@@ -76,7 +53,6 @@ function About() {
             </p>
           </div>
         </div>
-      </PageSubtitle>
     </div>
   )
 }

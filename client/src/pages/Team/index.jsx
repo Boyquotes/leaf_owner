@@ -43,10 +43,8 @@ function Team() {
 
   return (
     <div>
-      <PageTitle theme={theme}>Team</PageTitle>
       <PageSubtitle theme={theme}>
           <div className="about">
-          
             <div className="whiteBox">
               <h1>Camille RENOUX</h1>
               <ul>

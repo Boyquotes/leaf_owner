@@ -34,6 +34,8 @@ const StyledGlobalStyle = createGlobalStyle`
     .roadmap {
       background-color:${(props) =>
         props.isDarkMode ? '#002230' : 'white'};
+        color:${(props) =>
+          props.isDarkMode ? 'white' : 'black'};
     }
     `
 

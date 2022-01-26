@@ -34,6 +34,7 @@
 .appP2P{
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 .appP2P > div{
   width: 50%;
@@ -61,18 +62,34 @@
     transform: rotate(360deg);
   }
 }
+/* Mint */
+.mint {
+  width: 40%;
+  align-items: center;
+  background: #FFF;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  opacity: 68%;
+  font-weight: bold;
+  text-align: center;
+}
+.roadmap ul li, .about ul li{
+  list-style-type: none;
+}
 /* Roadmap */
 .roadmap {
+    width: 40%;
     align-items: center;
     background: #FFF;
-    margin: 3rem;
+    margin: 3rem auto;
     padding: 2rem;
     border-radius: 10px;
     opacity: 68%;
     font-weight: bold;
     text-align: center;
 }
-.roadmap ul li{
+.roadmap ul li, .about ul li{
     list-style-type: none;
 }
 /* MarketPlace */
@@ -117,6 +134,8 @@
 /* About */
 .about{
   display: flex;
+  width: 70%;
+  margin: 3rem auto;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
