@@ -9,6 +9,7 @@ import NFT from './pages/NFT'
 import Roadmap from './pages/Roadmap'
 import Team from './pages/Team'
 import About from './pages/About'
+import Litepaper from './pages/Litepaper'
 import Header from './components/Header'
 import Error from './components/Error'
 import App from './App';
@@ -35,6 +36,7 @@ ReactDOM.render(
             <Route path="/roadmap" element={<Roadmap />} />
             <Route path="/team" element={<Team />} />
             <Route path="/about" element={<About />} />
+            <Route path="/lite-paper" element={<Litepaper />} />
           </Routes>
       </ThemeProvider>
     </Router>
